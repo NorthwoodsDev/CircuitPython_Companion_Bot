@@ -44,7 +44,7 @@ def fight(minitft, companbot_x):
     uiGroup.append(text_area4)
 
     fightJudge = True
-    enemyHP = (int(companbot_x.hp) / random.randint(1,4)) + random.randint(0,5)
+    enemyHP = int((int(companbot_x.hp) / random.randint(1,4)) + random.randint(0,5))
     enemyAtk = (int(companbot_x.pAtk) / random.randint(1,2)) + random.randint(0,5)
     enemyDef = (int(companbot_x.pDef) / random.randint(1,2)) + random.randint(0,5)
     print("Enemy HP:" + str(enemyHP) + " Atk:" + str(enemyAtk) + " Def:" + str(enemyDef))
